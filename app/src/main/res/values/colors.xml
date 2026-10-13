@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="espresso">#2B1D17</color>
+    <color name="roasted_coffee">#70452D</color>
+    <color name="caramel">#C69C6D</color>
+    <color name="cream">#F7F2EA</color>
+    <color name="muted_text">#82766C</color>
+    <color name="hint_text">#A79A8E</color>
+    <color name="input_border">#E5D9CC</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="coffee_pressed">#50301F</color>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="36dp"
+        android:paddingBottom="28dp">
+
+        <!-- Marca de la cafetería -->
+        <LinearLayout
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_logo"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☕"
+                android:textSize="42sp"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="CAFÉ UDB"
+            android:textColor="@color/espresso"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Cada taza tiene su historia."
+            android:textColor="@color/roasted_coffee"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif" />
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/caramel" />
+
+        <!-- Encabezado del formulario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¡Qué gusto tenerte aquí!"
+                android:textColor="@color/espresso"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ingresa a tu cuenta para administrar la cafetería."
+                android:textColor="@color/muted_text"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+        </LinearLayout>
+
+        <!-- Tarjeta de acceso -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_card"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico"
+                android:textColor="@color/espresso"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_input"
+                android:hint="nombre@udb.edu.sv"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/espresso"
+                android:textColorHint="@color/hint_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textColor="@color/espresso"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_input"
+                android:hint="Ingresa tu contraseña"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/espresso"
+                android:textColorHint="@color/hint_text"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bg_button"
+                android:elevation="2dp"
+                android:text="Iniciar sesión"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Navegación al registro -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Primera vez por aquí? "
+                android:textColor="@color/muted_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvGoToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Crear cuenta"
+                android:textColor="@color/roasted_coffee"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="CALIDAD · PASIÓN · BUEN CAFÉ"
+            android:textColor="@color/muted_text"
+            android:textSize="10sp"
+            android:letterSpacing="0.08" />
+
+    </LinearLayout>
+</ScrollView>

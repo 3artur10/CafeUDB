@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="36dp"
+        android:paddingBottom="28dp">
+
+        <LinearLayout
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:gravity="center"
+            android:background="@drawable/bg_logo"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☕"
+                android:textSize="38sp"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="CAFÉ UDB"
+            android:textColor="@color/espresso"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"
+            android:gravity="center"
+            android:text="Forma parte de nuestro equipo"
+            android:textColor="@color/muted_text"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_card"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear nueva cuenta"
+                android:textColor="@color/espresso"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="24dp"
+                android:text="Registra tus credenciales para comenzar."
+                android:textColor="@color/muted_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico"
+                android:textColor="@color/espresso"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etRegEmail"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_input"
+                android:hint="nombre@udb.edu.sv"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/espresso"
+                android:textColorHint="@color/hint_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textColor="@color/espresso"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etRegPassword"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_input"
+                android:hint="Mínimo 6 caracteres"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/espresso"
+                android:textColorHint="@color/hint_text"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bg_button"
+                android:elevation="2dp"
+                android:text="Crear mi cuenta"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Ya tienes una cuenta? "
+                android:textColor="@color/muted_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvGoToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Iniciar sesión"
+                android:textColor="@color/roasted_coffee"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="CALIDAD · PASIÓN · BUEN CAFÉ"
+            android:textColor="@color/muted_text"
+            android:textSize="10sp"
+            android:letterSpacing="0.08" />
+
+    </LinearLayout>
+</ScrollView>
